@@ -13,7 +13,7 @@ const page = () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/users');
     const usersdata=  response.data;
     setusers(usersdata)
-    console.log(users);
+    console.log(response);
   }
   useEffect(() => {
     getUsers();
@@ -27,7 +27,6 @@ const page = () => {
         {
           users.map((user, i)=>{
             return <li key={i}>{user.username} ---&gt; <a href={`/${user.id}`}>explore</a></li>
-
           })
         }
       </div>
