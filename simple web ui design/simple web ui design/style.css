@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#nav{
+    /* background-color: rgb(175, 249, 249); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:32px 40px;
+}
+
+
+#nav #navPart3 button{
+    border: 1.5px solid black;
+    border-radius: 15px;
+    padding:7px 11px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#nav>h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#nav #navPart1{
+    display: flex;
+    align-items: center;
+
+}
+#nav #navPart1 h3,.menuIcon{
+    border: 1.5px solid black;
+    border-radius: 15px;
+    font-weight: 500;
+    padding:3px 9px;
+}
+
+#nav #navPart3 #btn2{
+    background-color: orangered;
+}
+
+#icons{
+    font-size: 90px;
+    position: absolute;
+    bottom: -56px;
+    left: 585px;
+    
+}
+
+.arrD{
+    position: relative;
+    right: 85px; 
+    font-size: 25px;
+    bottom: 36px;
+}
+#main>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 123px;
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.image{
+    height: 278px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+}
+.img1{
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+.img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+.img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+.img4{
+    transform: translate(-50%, -50%) rotate(-0deg);
+}
+.ri-arrow-drop-down-fill{
+    color: red;
+    font-size: 30px;
+}
+#footer{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(241, 161, 161); */
+    position: absolute;
+    width: 100%;
+    top: 562px;
+    padding: 17px 27px;
+
+    
+    
+}
+#social{
+    display: flex;
+    justify-content: center;
+}
