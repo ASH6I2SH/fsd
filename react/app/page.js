@@ -1,4 +1,5 @@
 "use client"
+import Header from '@/Components/Header'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
@@ -20,6 +21,7 @@ const page = () => {
 
   return (
     <div className='main'>
+      <Header/>
       <button onClick={getImages}>get images</button>
       <div className='cardHolder'>
         {images.map((elem, i)=>{

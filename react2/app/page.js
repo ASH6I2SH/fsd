@@ -26,7 +26,7 @@ const page = () => {
       <div className='dataContainer'>
         {
           users.map((user, i)=>{
-            return <li key={i}>{user.username} ---&gt; <a href={`/${user.id}`}>explore</a></li>
+            return <li key={i}>{user.username} ---   <a href={`/${user.id}`}>explore</a></li>
           })
         }
       </div>
