@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, #root, .underRoot{
+  height: 100vh;
+  background-color: #11121A;
+  color: #C9C9C9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.homeLi{
+  margin-right: auto;
+}
+nav li{
+  display: flex;
+}
+nav a{
+  text-decoration: none;
+  color: #C9C9C9;
+  padding: 20px 30px;
+  transition: background-color 150ms ease-in-out;
+}
+nav a:hover{
+  background-color: #272832;
+}
+nav .noHover:hover{
+  background-color: unset;
+}
+.activeLink{
+  border-bottom: 2px solid #C9C9C9;
+}
+img{
+  width: 20px;
+  height: 20px;
+}
+main{
+  height: 76vh;
+}
+.indexPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.aboutPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.blogPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.forumPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.loginPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.productsPage{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+p{
+  margin-top: 20px;
+}
+footer{
+  border-top: 1px solid rgba(255, 255, 255, 0.219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  padding: 20px;
+  background-color: orange;
+}
+@media(max-width:600px){
+  main{
+
+  }
+  
+  nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  footer{
+    padding-top: 20px;
+  }
+  
+}

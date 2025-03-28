@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-zinc-950 text-white p-10">
+      <div class="form">
+        <form class="flex flex-col items-center" action="">
+          <input
+            class="border rounded p-3 mt-3 w-full"
+            type="text"
+            placeholder="title"
+          />
+          <textarea
+            class="border rounded p-3 mt-3 w-full"
+            name=""
+            placeholder="whrite your task details here"
+          ></textarea>
+          <input
+            class="border rounded px-3 py-1 active:scale-120 active:bg-zinc-800 mt-3 w-25"
+            type="submit"
+            value="create task"
+          />
+        </form>
+      </div>
+      <div class="tasks bg-zinc-900 mt-5 p-3 flex">
+        <div class="task bg-zinc-800 rounded p-3 mr-3 hidden">
+            <h1 class="text-2xl">task title</h1>
+            <a class="text-blue-500 text-sm" href="#">explore</a>
+        </div>
+        <div class="task bg-zinc-800 rounded p-3 mr-3 hidden">
+            <h1 class="text-2xl">task title</h1>
+            <a class="text-blue-500 text-sm" href="#">explore</a>
+        </div>
+        <div class="task bg-zinc-800 rounded p-3 mr-3 hidden">
+            <h1 class="text-2xl">task title</h1>
+            <a class="text-blue-500 text-sm" href="#">explore</a>
+        </div>
+        <div class="text-zinc-600">no task yet</div>
+      </div>
+    </div>
+  </body>
+</html>

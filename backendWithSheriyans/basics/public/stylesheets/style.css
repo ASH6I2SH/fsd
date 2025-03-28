@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    min-height: 100%;
+    background-color: #202020;
+    color: white;
+}
+
+/* --------------------------Form-------------------- */
+
+.main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 0 50px;
+    /* background-color: rgb(136, 126, 105); */
+}
+.main form input{ 
+    width: 100%;
+    margin-bottom: 1vw;
+    padding: 1vw;
+}
+.main form textarea{
+    width: 100%;
+    margin-bottom: 1vw;
+    height: 10vh;
+    resize: none;
+    padding: 1vw;
+}
+.main form input[type="submit"]{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 1vw;
+}
+.main form input[type="submit"]:active{
+    scale: 1.1;
+}
+
+/* --------------------------------tasks------------------------------ */
+
+.tasks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5vw;
+    /* background-color: #2e2e2e; */
+    margin:0 5vw;
+    border-radius: 1vw;
+}
+
+/* ---------------task-------------- */
+
+.task{
+    background-color: #3b3b3b;
+    min-width: 15%;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    color: white;
+    border-radius: 1vw;
+}
+.task p{
+    margin-top: 1vw;
+}
+.task p a{
+    text-decoration: none;
+    color: #1E88E5;
+}
+
+.tasks>h2{
+    color: rgb(114, 114, 114);
+}
+
+
