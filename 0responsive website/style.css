@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 13%;
+    padding:3vh 5vw;
+    border-bottom: 0.125vh solid black;
+}
+.nav button{
+    padding: 0.5vw 1vw;
+    font-weight: 20vw;
+    border-radius: 1vw;
+    background-color: #3DBEB1;
+}
+.nav button{
+    cursor: pointer;
+}
+.nav-part2{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+.nav h2{
+    font-size: 2vw;
+}
+.nav-part2 h4{
+    font-size: 1.5vw;
+}
+.nav-part2 i{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    border-top: 0.125vh solid black;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 13%);
+}
+.left{
+    width: 60%;
+    height: 100%;
+    padding:10vh 5vw;
+}
+.left h1{
+    font-size: 6vw;
+    line-height: 9.5vh;
+}
+.left span{
+    color:#3DBEB1;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.left button{
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    background-color: #3DBEB1;
+}
+.left button{
+    cursor: pointer;
+}
+.right{
+    width: 40%;
+    height: 100%;
+    
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+.nav i:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .nav{
+        height: 12vh;
+        padding: 0 7vw;
+    }
+    .nav h2{
+        font-size: 4vw;
+
+    }
+    .nav-part2 h4{
+        font-size: 3vw;
+        display: none;
+    }
+    .nav-part2 i{
+        display: block;
+        font-size:3vh;
+    }
+    .left{
+        padding: 6vh 7vw;
+        height: 35%;
+    }
+    .nav button{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+        height: calc(100% - 12vh);
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+    .left h1{
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 4vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .content button{
+        padding: 3vw 2vw;
+        border-radius: 3vw;
+        font-size: 3.5vw;
+    }
+    
+    
+}

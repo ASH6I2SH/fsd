@@ -1,0 +1,6 @@
+export const RouteIndex= "/"
+export const RouteToBlog= "/blog"
+export const RouteToProducts= "/products"
+export const RouteToAbout= "/about"
+export const RouteToForum= "/forum"
+export const RouteToLogin= "/login"

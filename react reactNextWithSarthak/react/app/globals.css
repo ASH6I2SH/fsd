@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #1F1F1F;
+  color: whitesmoke;
+}
+
+/* ---------------------main page-------------------- */
+.main{
+  width: 100%;
+  height: 100%;
+  padding: 1vw;
+}
+.main .cardHolder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: aqua;
+  padding: 1.5vw;
+  gap: 1vw;
+}
+.main button{
+  display: block;
+}
+.main .card{
+  width: 10%;
+  height: 20%;
+}
+.main img{
+  border-radius: 1vw;
+  width: 100%;
+  height: 100%;
+}
