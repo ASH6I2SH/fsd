@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  border: 1px solid black;
+  border-radius: 3vw;
+  padding-left: 2vw;
+}
+
+form input[type="submit"] {
+  color: black;
+}
+
+

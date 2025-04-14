@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="main">
+        <a href="/">go back home</a>
+        <form action="/edit" method="post">
+            <input type="text" name="previous" readonly="true" placeholder="title goes here" value=<%= filename %> >
+            <input type="text" name="new" placeholder="new name">
+            <input type="submit" value="change">
+        </form>
+    </div>
+</body>
+</html>
